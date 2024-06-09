@@ -1,0 +1,649 @@
+    *{
+        margin:0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color:rgb(255, 255, 255);
+        background-size: cover;
+        color:black;
+        display: flex;
+        flex-direction: column;
+    }
+    .content {
+        height: 93%;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: auto;  
+    }
+    .navbar {
+        height: 10%;
+        width: 100%;
+        display:flex;
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 1px 1px 1px 1px rgba(125, 125, 125, 0.5); 
+      
+    }
+    .navbar ul {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+       justify-content: flex-end;
+        align-items: center;
+        gap:30px;
+      
+    }
+    .navbar ul li {
+        width: max-content;
+        height: 100%;
+        text-align: center;
+        padding-top: 5%; 
+        padding-right: 10px;
+        padding: 1em;
+      
+    }
+    .nom {
+        align-self: flex-start;
+        width: 20%;
+        height: 100%;
+        padding-left: 5%;
+        font-size:35px;
+        font-weight: 900;
+      
+        font-weight: bold; text-shadow: 1px 0.5px 0px black;
+        font-style: italic;
+        
+    }
+    .nom1 {
+        align-self: flex-start;
+        width: 20%;
+        height: 100%;
+        padding-left: 5%;
+        font-size:35px;
+        font-weight: 900;
+      
+        font-weight: bold; text-shadow: 1px 0.5px 0px black;
+        font-style: italic;
+        
+    }
+    .nom::first-letter {
+        color:rgb(255, 168, 37);
+        font-size: 140%;        
+        font-weight: bold; text-shadow: 1px 0.5px 0px black;
+    }
+    .nom1::first-letter {
+        color:rgb(84, 37, 255);
+        font-size: 140%;        
+        font-weight: bold; text-shadow: 1px 0.5px 0px black;
+    }    
+
+    .navbar ul li a {
+        color:black;
+        font-size: 18px;
+        text-shadow: 1px 0.5px 0.5px rgba(1, 1, 1, 0.5);
+        padding-bottom: 0%;
+    }
+    .navbar ul li::after {
+        content:"";
+        position:absolute;
+        background-color: #000;
+        transform: scale(0);
+        width: 6.8%;
+        height: 1px;
+        text-align: center;
+        padding-left: 10px;
+        display: block;
+        transition: transform 0.2s ease-in-out;
+    }
+    .navbar ul li:hover::after {
+        transform: scale(1);
+    }
+    .active {
+        position:absolute;
+        background-color: #000;
+        transform: scale(1);
+        width: 6.3%;
+        height: 1px;
+        text-align: center;
+        padding-left: 10px;
+        display: block;
+    }
+
+    .active1 {
+        position:absolute;
+        background-color: #000;
+        transform: scale(1);
+        width: 9.5%;
+        height: 1px;
+        text-align: center;
+        padding-left: 10px;
+        display: block;
+    }
+    .navbar ul li:nth-child(2)::after {   
+        width: 10%;   
+    }
+    
+
+
+    .content-1 {
+        width: 100%;
+        height: 600px;
+       padding: .5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+      
+    }
+    .content-1 aside:first-child {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        padding: .3em;
+        gap:25px;      
+        margin: auto;
+    }
+    .content-1 aside:first-child div {
+        width: 50%;
+        height: 100%;
+    }
+    .content-1 aside:first-child div:last-child {
+        font-size: 35px;
+        padding: 1em;
+        font-style: italic;       
+        text-align: center;
+        padding-top: 2%;
+    
+    }
+    .content-1 aside:first-child div:last-child::first-letter {
+        color:rgb(255, 168, 37);
+        font-size: 200%;
+        font-style: italic;
+        font-weight: bold; text-shadow: 1px 0.5px 0px black;
+    }
+    .content-1 aside:last-child {
+        width: 100%;
+        height: 40%;
+        padding-bottom: 0px;
+     
+    }
+    .content-1 aside:last-child div {
+        width: 100%;
+        height: 48%;
+    
+        padding:.3em;
+    
+    }
+    .content-1 aside:last-child div:first-child {
+        height: 53%;
+    
+    }
+    .content-1 aside:last-child div a {
+        border:2px solid black;   
+        border-radius: 20px;
+        padding: .3em;
+        color:black;
+       
+        margin-right: 5px;  
+    
+    }
+    .content-1 aside:last-child div:last-child {
+       
+        line-height: 40px;
+        padding-top: 0px;
+        
+    }
+
+
+
+
+    .content-2 {
+        width: 100%;
+        height: 2340px;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+       
+        padding-top: 0px;
+    }
+    .content-2 aside{
+        width: 100%;
+        height: 29%;
+       
+
+    }
+    .content-2 aside:first-child {
+    
+    }
+    .content-2 aside:first-child h1 {
+        margin-top: 0px;
+        padding-bottom:0px;
+    }
+    .content-2 aside h1 {
+        height:15% ;
+        margin-top: 10px;
+    }
+    .content-2 aside div {
+        width: 100%;
+        height: 85%;
+        display: flex;
+        padding-bottom: 10px;
+        gap:20px;
+    }
+    .content-2 aside div aside {
+        width: 20%;
+        height: 100%;
+    }
+    .content-2 aside div aside:last-child {
+        width:10%;
+        padding-top:10%;
+    }
+
+    .animation {
+        background-image: url(imgSelection/business3.jpeg);
+        padding-top: 25%;
+        animation-delay:5s;
+        animation-duration:50s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-name: animation;  
+        background-size: 100% 100%;
+    
+    
+    }
+
+    @keyframes animation {
+        0% {
+            background-image: url(imgSelection/femmeWeb1.png);
+        }
+        15% {
+            background-image: url(imgSelection/design1.jpg);
+        
+        
+        }
+        25% {
+            background-image: url(imgSelection/busness1.jpeg)
+        
+        }
+    
+        50% {
+            background-image: url(imgSelection/business3.jpeg);
+        }
+        75% {
+            background-image: url(imgSelection/design3.jpeg);
+        }
+        80% {
+            background-image: url(imgSelection/femmeweb.jpg);
+        }
+    }
+
+
+    /* Apprentissage */
+   .appSection {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: auto;
+ 
+    gap:30px;
+    padding-bottom: 10px;
+    
+   }
+   
+
+    .apprendre {
+        width: 100%;
+        display: flex; 
+        flex-direction: column;
+        
+    }
+    .apprendre article {
+        width: 50%;        
+        margin:10px auto;
+    }
+    .apprendre article:last-child {
+        width: 100%;
+    }
+
+    .apprendre article:first-child {
+        display: flex;
+        flex-direction: column;
+        color:black;             
+    }
+   
+    .apprendre article:first-child aside:first-child {
+        width: 100%;
+        height: 30%;
+        font-size: 40px;
+        text-align: center;     
+    }
+    .apprendre article:first-child aside:last-child {
+        height: 80%;
+        width: 100%;
+    }
+
+    .apprendre article:first-child aside:first-child ::first-letter {
+        font-size: 180%;
+        color:blue;
+        text-shadow: 3px 3px 2px black;
+    }
+    .apprendre article:last-child {
+        display: flex;
+        gap:20px;  
+    }
+
+    .apprendre article:last-child aside {
+        display:flex;
+        flex-flow:column nowrap;     
+        width: 100%;
+        height: 100%;
+        color:black;
+        padding: 1em;       
+        gap:10px;
+    }
+
+    .apprendre article:last-child aside  span {
+        width: 100%;
+        height: 23%;
+        padding: 0.5em;
+        color:black;
+        font-size: 17px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 1px 1px 1px 1px rgba(125, 125, 125, 0.5);
+    }
+    
+    .apprendre article:last-child aside  span i {
+        font-size: 10px;
+    }
+
+    .apprendre article:last-child aside span:hover {
+       box-shadow: 2px 2px 5px rgb(37, 88, 255), 2px 2px 5px rgb(37, 66, 255) inset ;
+       transition: 0.3s;
+      
+        
+    }
+
+
+
+/* Compte */
+
+    .connexion {
+        width: 70%;
+        height: 85%;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.1);
+        color:black;
+        display: flex;
+        box-shadow: 1px 1px 1px 1px rgba(125, 125, 125, 0.5);
+        position: absolute;        
+        border-radius: 20px;
+        margin: 6% 15%;
+        border-top: 1px solid rgba(125, 125, 125, 0.5);
+       
+    }
+    @keyframes compte {
+
+        
+    }
+    .connexion div {
+        width:50%;
+        height: 100%;
+        
+    }
+    .connexion div:last-child{
+        display:flex;
+        flex-direction: column;
+    }
+    .connexion article {
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+
+    }
+    .connexion article:nth-child(2) aside {
+        width: 80%;
+        height: 20%;
+        text-align: center;
+        box-shadow: 1px 1px 1px 1px rgba(125, 125, 125, 0.5);
+        border-radius: 10px;
+       padding-top: 2%;
+        margin: 0 auto;
+    }
+    .connexion article:nth-child(2) aside i {
+        padding-right: 10px;
+    }
+     
+    .connexion article:last-child {
+        padding-top: 13%;
+    }
+    .connexion article:first-child a {
+        text-align: right;
+        padding: .5em;
+      
+    }
+    .connexion1 {
+        
+        width: 100%;
+        height: 100%;
+        display: block;
+        
+    }
+    
+    body {
+        background-image: url(imgCompte/plan3.png);
+        background-size: cover;
+        background-size: 100% 100%;
+        max-width: 100%;
+        backdrop-filter: blur(4px);
+    }
+
+    .content1{
+       width: 100%;
+       height: 1000px;
+       overflow-y: auto;
+       overflow-x: auto; 
+     
+    }
+    .content2 {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-flow:row nowrap;       
+
+    }
+    .content2 aside {
+        width: 50%;
+        height: 82%;       
+           
+    }
+    .content2 aside:last-child {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .content2 aside:last-child  h3 {
+        height: 10%;
+        text-align: center;
+        font-size: 35px;
+        padding-top: 3%;
+    } 
+    .content2 aside  form {
+        width: 100%;
+        height: 90%;
+        padding:1em;
+        display: flex;
+        flex-flow: row wrap;
+        gap:20px;
+    }
+    .content2 aside form div {
+        width: 48%;
+        height: 17%;
+     
+       display: flex;
+       flex-direction: column;
+    }
+    .content2 aside form div p:first-child {
+        width: 100%;
+        height: 50%;
+        padding-top: 5%;
+    }
+    .content2 aside form div p:last-child{
+        box-shadow: 1px 1px 1px 1px rgba(125, 125, 125, 0.5); 
+        border-radius: 10px;        
+        width: 100%;
+        height: 50%;
+        border-top: 1px solid rgba(143, 141, 141, 0.5) ;
+       
+    }
+    input {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        padding: 0.5em;
+        border:none;
+        margin-top: 0%;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    input:hover {
+        background-color: rgb(247, 152, 8);
+        transition: 0.5s;
+    }
+  
+    select{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        padding: 0.5em;
+        border:none;
+        margin-top: 0%;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    select:hover {
+        background-color: rgb(247, 152, 8);
+    }
+    label {
+        width: 100%;
+        height: 50%;
+        font-size: 18px;
+        text-shadow: 0.5px 0.7px 1px black;
+       
+    }
+    label::first-letter {
+    }
+    .content2 aside form div:last-child {
+        margin-top: 3%;
+         width: 100%; 
+         height: 10%;
+    }
+    .content2 aside form div:last-child p {
+        box-shadow: 1px 1px 1px 1px rgba(125, 125, 125, 0.5); 
+        border-radius: 10px;        
+       width: 40%;
+       height: 100%;
+       border-top: 1px solid rgba(143, 141, 141, 0.5) ;
+       text-align: center;      
+       background-color:rgb(247, 152, 8);
+       margin: 0 auto;
+
+    }
+    .content2 aside form div:last-child p input {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        padding: 1em;     
+        margin-top: -100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        font-size: large;       
+        padding-top: 5%;
+        margin-left: 7%;
+        font-size: 18px;
+        text-shadow: 0.5px 0.7px 1px black;
+        transform: translate(-15px, -10px);
+    }
+
+
+
+
+    .content2 aside:first-child {
+        padding: 1em;
+        display:flex;
+        flex-direction: column;
+    }
+   
+
+    .content2 aside:first-child div {
+        width: 100%;
+        height: 23%;    
+        padding: .5em;
+        font-size: large;
+        font-size: 21px;
+        text-shadow: 0px 0px .5px;
+    }
+
+    .content2 aside:first-child div:first-child {
+        font-size: 45px;
+        padding-top: 4%;
+    }
+
+
+
+    
+    .footer {
+        width: 100%;
+        height: 365px;
+        display: flex;
+        background-color: rgba(255, 255, 255,0.5);
+        box-shadow: 1px 1px 1px 1px rgba(125, 125, 125, 0.5);  
+        margin-bottom: 0px;     
+      
+    }
+    .footer article {
+        width: 40%;
+        height: 100%;
+        padding: .5em;        
+    }
+    .footer article aside {
+        width: 100%;
+        height:10%;
+        margin-bottom: 8px;
+    }
+    .footer article aside  a {
+       color:rgb(14, 13, 13);
+       text-shadow: 0.5px 0px .5px;
+    }
+    .footer article aside div:hover {
+        display: block;
+    }
+    
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 12px;
+   
+   
+  }
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(18, 18, 17);
+    border-radius: 10px;   
+  }
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1e0;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 1px 1px 1px 1px rgba(125, 125, 125, 0.5); 
+  } 
